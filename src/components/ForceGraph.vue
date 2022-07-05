@@ -17,7 +17,7 @@
                     <v-card-text>
                         P: Partially Vaccinated
                         <br>
-                        U: Unvaccinated
+                        N: Not vaccinated
                     </v-card-text>
                     <v-list dense>
                         <v-list-item v-for="(value, key) in focusNode" :key="key">
