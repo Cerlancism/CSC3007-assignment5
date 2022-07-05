@@ -131,10 +131,10 @@ export default class ForceGraph extends Vue
             .attr("stroke", "black")
             .attr("marker-end", function (d) { return "url(#" + "default" + ")"; });
 
-        // Node circles
+        // Node g
         let node = svg.append("g")
             .attr("id", "nodes")
-            .selectAll("circle")
+            .selectAll("g")
             .data(graphDataNodes)
             .enter()
             .append("g")
@@ -168,10 +168,12 @@ export default class ForceGraph extends Vue
             )
 
 
+        // Circles
         node.append("circle")
             .attr("r", radius)
             .style("fill", d => d.gender === "female" ? "palevioletred" : "steelblue")
 
+        // Labels
         node.append('text')
             .attr('text-anchor', 'middle')
             .attr('dominant-baseline', 'central')
