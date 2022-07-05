@@ -1,23 +1,30 @@
 <template>
     <v-container style="max-width: 1600px;">
         <v-row>
-            <v-col sm="12" md="8">
+            <v-col cols="12" sm="12" md="8">
                 <v-card>
                     <svg id="forcegraph"></svg>
                 </v-card>
             </v-col>
-            <v-col sm="12" md="4">
+            <v-col cols="12" sm="12" md="4">
                 <v-card>
                     <v-card-title>
                         Case Details
                     </v-card-title>
                     <v-card-subtitle>
-                        {{ (focusNode.id !== null ? focusNode.id : "") + "&nbsp;" }}
+                        Mouse hover a node to display details
                     </v-card-subtitle>
-                    <v-list v-for="(value, key) in focusNode" :key="key">
-                        <v-list-item>
-                            <v-list-item-title>{{ key }}</v-list-item-title>
-                            <v-list-item-subtitle>{{ value }}</v-list-item-subtitle>
+                    <v-card-text>
+                        P: Partially Vaccinated
+                        <br>
+                        U: Unvaccinated
+                    </v-card-text>
+                    <v-list dense>
+                        <v-list-item v-for="(value, key) in focusNode" :key="key">
+                            <v-list-item-content>
+                                <v-list-item-title>{{ capitalise(key) }}</v-list-item-title>
+                                <v-list-item-subtitle>{{ value + "&nbsp;" }}</v-list-item-subtitle>
+                            </v-list-item-content>
                         </v-list-item>
                     </v-list>
                 </v-card>
@@ -26,6 +33,12 @@
     </v-container>
 </template>
 
+<style>
+.node-hover {
+    stroke-width: 2px;
+    stroke: black;
+}
+</style>
 
 <script lang="ts">
 import { Component, Prop, Vue, } from 'vue-property-decorator';
@@ -52,17 +65,7 @@ type CovidCase = {
 
 type CovidNode = d3.SimulationNodeDatum & CovidCase
 
-@Component(
-    {
-        filters: {
-            capitalise(text: string)
-            {
-                return text.replace(/(\w)(\w*)/g,
-                    function (g0, g1, g2) { return g1.toUpperCase() + g2.toLowerCase(); })
-            }
-        }
-    }
-)
+@Component
 export default class ForceGraph extends Vue
 {
     focusNode = {
@@ -75,6 +78,12 @@ export default class ForceGraph extends Vue
         date: "",
         serology: "",
         vaccinated: "",
+    }
+
+    capitalise(text: string)
+    {
+        return text.replace(/(\w)(\w*)/g,
+            function (g0, g1, g2) { return g1.toUpperCase() + g2.toLowerCase(); })
     }
 
     async mounted()
@@ -128,17 +137,10 @@ export default class ForceGraph extends Vue
             .selectAll("circle")
             .data(graphDataNodes)
             .enter()
-            .append("circle")
-            .attr("r", radius)
-            .style("fill", d => d.gender === "female" ? "palevioletred" : "steelblue")
-            .call(
-                d3.drag<SVGCircleElement, CovidNode>()
-                    .on("start", dragstarted)
-                    .on("drag", dragged)
-                    .on("end", dragended)
-            )
-            .on("mouseover", (e, data) =>
+            .append("g")
+            .on("mouseover", (e: MouseEvent, data) =>
             {
+                d3.select(e.target as SVGAElement).classed("node-hover", true);
                 for (const key in this.focusNode)
                 {
                     if (Object.prototype.hasOwnProperty.call(this.focusNode, key))
@@ -147,8 +149,9 @@ export default class ForceGraph extends Vue
                     }
                 }
             })
-            .on("mouseout", (e, data) =>
+            .on("mouseout", (e: MouseEvent, data) =>
             {
+                d3.select(e.target as SVGAElement).classed("node-hover", false);
                 for (const key in this.focusNode)
                 {
                     if (Object.prototype.hasOwnProperty.call(this.focusNode, key))
@@ -157,7 +160,24 @@ export default class ForceGraph extends Vue
                     }
                 }
             })
+            .call(
+                d3.drag<SVGGElement, CovidNode>()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended)
+            )
 
+
+        node.append("circle")
+            .attr("r", radius)
+            .style("fill", d => d.gender === "female" ? "palevioletred" : "steelblue")
+
+        node.append('text')
+            .attr('text-anchor', 'middle')
+            .attr('dominant-baseline', 'central')
+            .attr('font-size', '18px')
+            .style("pointer-events", "none")
+            .text((d) => d.vaccinated == "no" ? "N" : d.vaccinated.startsWith("partial") ? "P" : "")
         // Force 
         let simulation = d3.forceSimulation()
             .nodes(graphDataNodes)
@@ -165,17 +185,19 @@ export default class ForceGraph extends Vue
             .force("y", d3.forceY().strength(0.1).y(height / 2))
             .force("link", d3.forceLink<CovidNode, CovidLink>(graphDataLinks).id(d => d.id))
             .force("charge", d3.forceManyBody().strength(20))
-            .force("collide", d3.forceCollide().strength(0.2).radius(radius * 3))
+            .force("collide", d3.forceCollide().strength(0.3).radius(radius * 3))
             .on("tick", () =>
             {
-                node.attr("cx", d => d.x as number)
-                    .attr("cy", d => d.y as number)
+                // node.attr("cx", d => d.x as number)
+                //     .attr("cy", d => d.y as number)
+
+                node.attr("transform", d => "translate(" + d.x + "," + d.y + ")")
 
                 // Curve path
                 linkpath.attr("d", d =>
                 {
                     // https://stackoverflow.com/questions/16568313/arrows-on-links-in-d3js-force-layout
-                    let dx = d.target.x - d.source.x,
+                    const dx = d.target.x - d.source.x,
                         dy = d.target.y - d.source.y,
                         dr = Math.sqrt(dx * dx + dy * dy),
                         gamma = Math.atan2(dy, dx), // Math.atan2 returns the angle in the correct quadrant as opposed to Math.atan
