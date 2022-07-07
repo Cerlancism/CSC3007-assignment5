@@ -1,1 +1,11 @@
-html{overflow-y:auto}.node-hover{stroke-width:2px;stroke:#000}
+
+html {
+    overflow-y: auto
+}
+
+
+.node-hover {
+    stroke-width: 2px;
+    stroke: black;
+}
+
