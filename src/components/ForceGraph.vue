@@ -107,10 +107,9 @@ export default class ForceGraph extends Vue
         // console.log("cases", graphDataNodes); //cases
 
         // Arrow head
-        svg.append("defs").selectAll("marker")
-            .data(["default"])
-            .enter().append("marker")
-            .attr("id", function (d) { return d; })
+        svg.append("defs")
+            .append("marker")
+            .attr("id", "arrowhead")
             .attr("viewBox", "0 -5 10 10")
             .attr("refX", 0)
             .attr("refY", 0)
@@ -129,7 +128,7 @@ export default class ForceGraph extends Vue
             .append("path")
             .attr("fill", "none")
             .attr("stroke", "black")
-            .attr("marker-end", function (d) { return "url(#" + "default" + ")"; });
+            .attr("marker-end", "url(#arrowhead)");
 
         // Node g
         let node = svg.append("g")
