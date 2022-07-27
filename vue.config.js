@@ -6,7 +6,7 @@ module.exports = defineConfig({
   publicPath: '',
   outputDir: 'docs',
   pwa: {
-    name: 'Singapore COVID 19 Force Graph'
+    name: 'Singapore PSI Map'
   },
   chainWebpack: config =>
   {

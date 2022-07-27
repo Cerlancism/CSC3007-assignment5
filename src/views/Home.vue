@@ -1,18 +1,18 @@
 <template>
     <div>
-        <ForceGraph>
+        <MapPSI>
 
-        </ForceGraph>
+        </MapPSI>
     </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import ForceGraph from '@/components/ForceGraph.vue';
+import MapPSI from '@/components/MapPSI.vue';
 
 @Component({
     components: {
-        ForceGraph
+        MapPSI
     }
 })
 export default class Home extends Vue

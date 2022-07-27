@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 6332:
+/***/ 6187:
 /***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
 
@@ -16,8 +16,8 @@ var es_object_assign = __webpack_require__(9601);
 var es_promise_finally = __webpack_require__(7727);
 // EXTERNAL MODULE: ./node_modules/vue/dist/vue.runtime.esm.js
 var vue_runtime_esm = __webpack_require__(144);
-;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/App.vue?vue&type=template&id=e5c96730&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',[_c('v-card',{class:_vm.radius},[_c('v-toolbar',{attrs:{"color":"dark","dark":"","flat":""},scopedSlots:_vm._u([{key:"extension",fn:function(){return [_c('v-tabs',{attrs:{"align-with-title":""},model:{value:(_vm.tab),callback:function ($$v) {_vm.tab=$$v},expression:"tab"}},[_c('v-tabs-slider',{attrs:{"color":"white"}}),_c('v-tab',{attrs:{"to":"/"}},[_vm._v("Home")]),_c('v-tab',{attrs:{"to":"/about"}},[_vm._v("About")])],1)]},proxy:true}])},[_c('v-toolbar-title',[_vm._v("Singapore COVID 19 Force Graph")]),_c('v-spacer')],1)],1),_c('v-main',[_c('router-view')],1)],1)}
+;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/App.vue?vue&type=template&id=1c0b2d9e&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',[_c('v-card',{class:_vm.radius},[_c('v-toolbar',{attrs:{"color":"dark","dark":"","flat":""},scopedSlots:_vm._u([{key:"extension",fn:function(){return [_c('v-tabs',{attrs:{"align-with-title":""},model:{value:(_vm.tab),callback:function ($$v) {_vm.tab=$$v},expression:"tab"}},[_c('v-tabs-slider',{attrs:{"color":"white"}}),_c('v-tab',{attrs:{"to":"/"}},[_vm._v("Home")]),_c('v-tab',{attrs:{"to":"/about"}},[_vm._v("About")])],1)]},proxy:true}])},[_c('v-toolbar-title',[_vm._v("Singapore PSI Map")]),_c('v-spacer')],1)],1),_c('v-main',[_c('router-view')],1)],1)}
 var staticRenderFns = []
 
 
@@ -122,8 +122,8 @@ var VMain = __webpack_require__(7877);
 var VSpacer = __webpack_require__(9762);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTabs/VTab.js
 var VTab = __webpack_require__(4227);
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTabs/VTabs.js + 16 modules
-var VTabs = __webpack_require__(5673);
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTabs/VTabs.js + 24 modules
+var VTabs = __webpack_require__(81);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTabs/VTabsSlider.js
 var VTabsSlider = __webpack_require__(1208);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VToolbar/VToolbar.js + 6 modules
@@ -171,9 +171,9 @@ var es_string_iterator = __webpack_require__(8783);
 var web_dom_collections_iterator = __webpack_require__(3948);
 // EXTERNAL MODULE: ./node_modules/vue-router/dist/vue-router.esm.js
 var vue_router_esm = __webpack_require__(8345);
-;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/Home.vue?vue&type=template&id=69767ee2&
-var Homevue_type_template_id_69767ee2_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('ForceGraph')],1)}
-var Homevue_type_template_id_69767ee2_staticRenderFns = []
+;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/Home.vue?vue&type=template&id=54eb7308&
+var Homevue_type_template_id_54eb7308_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('MapPSI')],1)}
+var Homevue_type_template_id_54eb7308_staticRenderFns = []
 
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/regeneratorRuntime.js
@@ -182,27 +182,24 @@ var regeneratorRuntime = __webpack_require__(7906);
 var asyncToGenerator = __webpack_require__(6198);
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
 var es_function_name = __webpack_require__(8309);
-;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ForceGraph.vue?vue&type=template&id=afb0ad82&
-var ForceGraphvue_type_template_id_afb0ad82_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',{staticStyle:{"max-width":"1600px"}},[_c('v-row',[_c('v-col',{attrs:{"cols":"12","sm":"12","md":"8"}},[_c('v-card',[_c('svg',{attrs:{"id":"forcegraph"}})])],1),_c('v-col',{attrs:{"cols":"12","sm":"12","md":"4"}},[_c('v-card',[_c('v-card-title',[_vm._v(" Case Details ")]),_c('v-card-subtitle',[_vm._v(" Mouse hover a node to display details ")]),_c('v-card-text',[_vm._v(" P: Partially Vaccinated "),_c('br'),_vm._v(" N: Not vaccinated ")]),_c('v-list',{attrs:{"dense":""}},_vm._l((_vm.focusNode),function(value,key){return _c('v-list-item',{key:key},[_c('v-list-item-content',[_c('v-list-item-title',[_vm._v(_vm._s(_vm.capitalise(key)))]),_c('v-list-item-subtitle',[_vm._v(_vm._s(value + " "))])],1)],1)}),1)],1)],1)],1)],1)}
-var ForceGraphvue_type_template_id_afb0ad82_staticRenderFns = []
+;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/MapPSI.vue?vue&type=template&id=52cf8e38&
+var MapPSIvue_type_template_id_52cf8e38_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',{staticStyle:{"max-width":"1600px"}},[_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('h1',{staticClass:"text-center"},[_vm._v("PSI")]),_c('p',{staticClass:"text-center"},[_vm._v("Last updated: "+_vm._s(_vm.lastUpdated))])]),_c('v-col',{attrs:{"cols":"12"}},[_c('l-map',{staticStyle:{"height":"640px"},attrs:{"max-bounds":_vm.latLngBounds([[1.1, 103.5], [1.5, 104.3]]),"zoom":12,"maxZoom":18,"minZoom":12,"center":[1.3521, 103.8198]}},[_c('l-tile-layer',{attrs:{"url":"https://maps-{s}.onemap.sg/v3/Default/{z}/{x}/{y}.png","attribution":"<img src=\"https://www.onemap.gov.sg/docs/maps/images/oneMap64-01.png\" style=\"height:20px;width:20px;\"/> OneMap | Map data &copy; contributors, <a href=\"http://SLA.gov.sg\">Singapore Land Authority</a>"}}),_vm._l((_vm.psiMarkers),function(item){return _c('l-marker',{key:item.location,attrs:{"lat-lng":item.center}},[_c('l-icon',{attrs:{"class-name":item.class + " psi-marker"}},[_c('div',{staticClass:"headline"},[_vm._v(" "+_vm._s(item.value)+" ")])])],1)})],2)],1)],1)],1)}
+var MapPSIvue_type_template_id_52cf8e38_staticRenderFns = []
 
 
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 3 modules
-var slicedToArray = __webpack_require__(5200);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.exec.js
-var es_regexp_exec = __webpack_require__(4916);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.replace.js
-var es_string_replace = __webpack_require__(5306);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom-collections.for-each.js
-var web_dom_collections_for_each = __webpack_require__(4747);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.to-string.js
-var es_regexp_to_string = __webpack_require__(9714);
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.starts-with.js
-var es_string_starts_with = __webpack_require__(6755);
-// EXTERNAL MODULE: ./node_modules/d3/src/index.js + 130 modules
-var src = __webpack_require__(196);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41[0].rules[0].use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ForceGraph.vue?vue&type=script&lang=ts&
-
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.find.js
+var es_array_find = __webpack_require__(9826);
+// EXTERNAL MODULE: ./node_modules/leaflet/dist/leaflet-src.js
+var leaflet_src = __webpack_require__(5243);
+// EXTERNAL MODULE: ./node_modules/vue2-leaflet/dist/components/LMap.js
+var LMap = __webpack_require__(5352);
+// EXTERNAL MODULE: ./node_modules/vue2-leaflet/dist/components/LTileLayer.js
+var LTileLayer = __webpack_require__(2727);
+// EXTERNAL MODULE: ./node_modules/vue2-leaflet/dist/components/LMarker.js
+var LMarker = __webpack_require__(8380);
+// EXTERNAL MODULE: ./node_modules/vue2-leaflet/dist/components/LIcon.js
+var LIcon = __webpack_require__(8592);
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41[0].rules[0].use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/MapPSI.vue?vue&type=script&lang=ts&
 
 
 
@@ -219,12 +216,7 @@ var src = __webpack_require__(196);
 
 
 
-
-
-
-
-
-var ForceGraphvue_type_script_lang_ts_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+var MapPSIvue_type_script_lang_ts_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
   var c = arguments.length,
       r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
       d;
@@ -234,18 +226,27 @@ var ForceGraphvue_type_script_lang_ts_decorate = undefined && undefined.__decora
   return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
+ // import * as d3 from "d3";
 
 
 
-var ForceGraph = /*#__PURE__*/function (_Vue) {
-  (0,inherits/* default */.Z)(ForceGraph, _Vue);
 
-  var _super = (0,createSuper/* default */.Z)(ForceGraph);
+delete leaflet_src.Icon.Default.prototype._getIconUrl;
+leaflet_src.Icon.Default.mergeOptions({
+  iconRetinaUrl: __webpack_require__(6431),
+  iconUrl: __webpack_require__(6266),
+  shadowUrl: __webpack_require__(8858)
+});
 
-  function ForceGraph() {
+var MapPSI = /*#__PURE__*/function (_Vue) {
+  (0,inherits/* default */.Z)(MapPSI, _Vue);
+
+  var _super = (0,createSuper/* default */.Z)(MapPSI);
+
+  function MapPSI() {
     var _this;
 
-    (0,classCallCheck/* default */.Z)(this, ForceGraph);
+    (0,classCallCheck/* default */.Z)(this, MapPSI);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
@@ -253,27 +254,61 @@ var ForceGraph = /*#__PURE__*/function (_Vue) {
 
     _this = _super.call.apply(_super, [this].concat(args));
 
-    (0,defineProperty/* default */.Z)((0,assertThisInitialized/* default */.Z)(_this), "focusNode", {
-      id: "",
-      gender: "",
-      age: "",
-      nationality: "",
-      occupation: "",
-      organization: "",
-      date: "",
-      serology: "",
-      vaccinated: ""
-    });
+    (0,defineProperty/* default */.Z)((0,assertThisInitialized/* default */.Z)(_this), "latLngBounds", leaflet_src.latLngBounds);
+
+    (0,defineProperty/* default */.Z)((0,assertThisInitialized/* default */.Z)(_this), "psiMarkers", [{
+      location: 'central',
+      center: [1.35735, 103.82],
+      value: "-",
+      class: "psi-normal"
+    }, {
+      location: 'south',
+      center: [1.29587, 103.82],
+      value: "-",
+      class: "psi-normal"
+    }, {
+      location: 'north',
+      center: [1.41803, 103.82],
+      value: "-",
+      class: "psi-normal"
+    }, {
+      location: 'east',
+      center: [1.35735, 103.94],
+      value: "-",
+      class: "psi-normal"
+    }, {
+      location: 'west',
+      center: [1.35735, 103.7],
+      value: "-",
+      class: "psi-normal"
+    }]);
+
+    (0,defineProperty/* default */.Z)((0,assertThisInitialized/* default */.Z)(_this), "psiResponse", void 0);
+
+    (0,defineProperty/* default */.Z)((0,assertThisInitialized/* default */.Z)(_this), "lastUpdated", "");
 
     return _this;
   }
 
-  (0,createClass/* default */.Z)(ForceGraph, [{
-    key: "capitalise",
-    value: function capitalise(text) {
-      return text.replace(/(\w)(\w*)/g, function (g0, g1, g2) {
-        return g1.toUpperCase() + g2.toLowerCase();
-      });
+  (0,createClass/* default */.Z)(MapPSI, [{
+    key: "getPSISeverityClass",
+    value:
+    /**
+     * https://www.haze.gov.sg/
+     * @param psi
+     */
+    function getPSISeverityClass(psi) {
+      if (psi <= 50) {
+        return "psi-normal";
+      } else if (psi >= 51 && psi <= 100) {
+        return "psi-moderate";
+      } else if (psi >= 101 && psi <= 200) {
+        return "psi-unhealthy";
+      } else if (psi >= 201 && psi <= 300) {
+        return "psi-veryunhealthy";
+      } else {
+        return "psi-hardardous";
+      }
     }
   }, {
     key: "mounted",
@@ -281,125 +316,94 @@ var ForceGraph = /*#__PURE__*/function (_Vue) {
       var _mounted = (0,asyncToGenerator/* default */.Z)( /*#__PURE__*/(0,regeneratorRuntime/* default */.Z)().mark(function _callee() {
         var _this2 = this;
 
-        var width, height, radius, arrowSize, svg, _yield$Promise$all, _yield$Promise$all2, graphDataLinks, graphDataNodes, linkpath, node, simulation, dragstarted, dragged, dragended;
+        var response, psi_24, _loop, key, _ret, error;
 
         return (0,regeneratorRuntime/* default */.Z)().wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                dragended = function _dragended(event, d) {
-                  if (!event.active) {
-                    simulation.alphaTarget(0);
-                  } else {
-                    console.log("dragended event.active", event.active, event);
-                  }
+                _context.prev = 0;
+                _context.next = 3;
+                return fetch("https://api.data.gov.sg/v1/environment/psi");
 
-                  d.fx = null;
-                  d.fy = null;
-                };
+              case 3:
+                response = _context.sent;
 
-                dragged = function _dragged(event, d) {
-                  d.fx = event.x;
-                  d.fy = event.y;
-                };
+                if (response.ok) {
+                  _context.next = 6;
+                  break;
+                }
 
-                dragstarted = function _dragstarted(event, d) {
-                  if (!event.active) {
-                    simulation.alphaTarget(0.05).restart();
-                  } else {
-                    console.log("dragstarted event.active", event.active, event);
-                  }
+                throw "Not ok response";
 
-                  d.fx = d.x;
-                  d.fy = d.y;
-                };
-
-                width = 800, height = 600;
-                radius = 16;
-                arrowSize = 10;
-                svg = src/* select */.Ys("#forcegraph").attr("viewBox", "0 0 " + width + " " + height);
+              case 6:
+                _context.t0 = JSON;
                 _context.next = 9;
-                return Promise.all([src/* json */.AVB("data/links-sample.json"), src/* json */.AVB("data/cases-sample.json")]);
+                return response.text();
 
               case 9:
-                _yield$Promise$all = _context.sent;
-                _yield$Promise$all2 = (0,slicedToArray/* default */.Z)(_yield$Promise$all, 2);
-                graphDataLinks = _yield$Promise$all2[0];
-                graphDataNodes = _yield$Promise$all2[1];
-                graphDataLinks.forEach(function (e) {
-                  e.source = e.infector;
-                  e.target = e.infectee;
-                }); // console.log("links", graphDataLinks); //links
-                // console.log("cases", graphDataNodes); //cases
-                // Arrow head
+                _context.t1 = _context.sent;
+                this.psiResponse = _context.t0.parse.call(_context.t0, _context.t1);
+                psi_24 = this.psiResponse.items[0].readings["psi_twenty_four_hourly"];
 
-                svg.append("defs").append("marker").attr("id", "arrowhead").attr("viewBox", "0 -5 10 10").attr("refX", 0).attr("refY", 0).attr("markerWidth", arrowSize).attr("markerHeight", arrowSize).attr("orient", "auto").append("path").attr("d", "M0,-5L10,0L0,5"); // Path line
+                _loop = function _loop(key) {
+                  if (Object.prototype.hasOwnProperty.call(psi_24, key)) {
+                    var value = psi_24[key];
 
-                linkpath = svg.append("g").attr("id", "links").selectAll("path").data(graphDataLinks).enter().append("path").attr("fill", "none").attr("stroke", "black").attr("marker-end", "url(#arrowhead)"); // Node g
+                    var target = _this2.psiMarkers.find(function (x) {
+                      return x.location === key;
+                    });
 
-                node = svg.append("g").attr("id", "nodes").selectAll("g").data(graphDataNodes).enter().append("g").on("mouseover", function (e, data) {
-                  src/* select */.Ys(e.target).classed("node-hover", true);
-
-                  for (var key in _this2.focusNode) {
-                    if (Object.prototype.hasOwnProperty.call(_this2.focusNode, key)) {
-                      _this2.focusNode[key] = data[key].toString();
+                    if (!target) {
+                      return "continue";
                     }
+
+                    console.log(key, value);
+                    target.value = value;
+                    target.class = _this2.getPSISeverityClass(value);
                   }
-                }).on("mouseout", function (e, data) {
-                  src/* select */.Ys(e.target).classed("node-hover", false);
+                };
 
-                  for (var key in _this2.focusNode) {
-                    if (Object.prototype.hasOwnProperty.call(_this2.focusNode, key)) {
-                      _this2.focusNode[key] = "";
-                    }
-                  }
-                }).call(src/* drag */.ohM().on("start", dragstarted).on("drag", dragged).on("end", dragended)); // Circles
+                _context.t2 = (0,regeneratorRuntime/* default */.Z)().keys(psi_24);
 
-                node.append("circle").attr("r", radius).style("fill", function (d) {
-                  return d.gender === "female" ? "palevioletred" : "steelblue";
-                }); // Labels
+              case 14:
+                if ((_context.t3 = _context.t2()).done) {
+                  _context.next = 21;
+                  break;
+                }
 
-                node.append('text').attr('text-anchor', 'middle').attr('dominant-baseline', 'central').attr('font-size', '18px').style("pointer-events", "none").text(function (d) {
-                  return d.vaccinated == "no" ? "N" : d.vaccinated.startsWith("partial") ? "P" : "";
-                }); // Force 
+                key = _context.t3.value;
+                _ret = _loop(key);
 
-                simulation = src/* forceSimulation */.A4v().nodes(graphDataNodes).force("x", src/* forceX */.RUJ().strength(0.1).x(width / 2)).force("y", src/* forceY */.Mrm().strength(0.1).y(height / 2)).force("link", src/* forceLink */.Fsl(graphDataLinks).id(function (d) {
-                  return d.id;
-                })).force("charge", src/* forceManyBody */.q5i().strength(20)).force("collide", src/* forceCollide */.Hh().strength(0.3).radius(radius * 3)).on("tick", function () {
-                  // node.attr("cx", d => d.x as number)
-                  //     .attr("cy", d => d.y as number)
-                  node.attr("transform", function (d) {
-                    return "translate(" + d.x + "," + d.y + ")";
-                  }); // Curve path
+                if (!(_ret === "continue")) {
+                  _context.next = 19;
+                  break;
+                }
 
-                  linkpath.attr("d", function (d) {
-                    // https://stackoverflow.com/questions/16568313/arrows-on-links-in-d3js-force-layout
-                    var dx = d.target.x - d.source.x,
-                        dy = d.target.y - d.source.y,
-                        dr = Math.sqrt(dx * dx + dy * dy),
-                        gamma = Math.atan2(dy, dx),
-                        // Math.atan2 returns the angle in the correct quadrant as opposed to Math.atan
-                    sx = Math.max(radius, Math.min(width - radius, d.source.x + Math.cos(gamma) * radius)),
-                        sy = Math.max(radius, Math.min(height - radius, d.source.y + Math.sin(gamma) * radius)),
-                        // Recall that 10 is the size of the arrow
-                    tx = Math.max(radius, Math.min(width - radius, d.target.x - Math.cos(gamma) * (radius + arrowSize))),
-                        ty = Math.max(radius, Math.min(height - radius, d.target.y - Math.sin(gamma) * (radius + arrowSize))); // If you like a tighter curve, you may recalculate dx dy dr:
-                    //dx = tx - sx;
-                    //dy = ty - sy;
-                    //dr = Math.sqrt(dx * dx + dy * dy);
+                return _context.abrupt("continue", 14);
 
-                    return "M" + sx + "," + sy + "A" + dr + "," + dr + " 0 0,1 " + tx + "," + ty;
-                  }); // Straight path
-                  // linkpath
-                  //     .attr("d", d => "M" + d.source.x + "," + d.source.y + " " + d.target.x + "," + d.target.y);
-                });
+              case 19:
+                _context.next = 14;
+                break;
 
-              case 20:
+              case 21:
+                this.lastUpdated = new Date(this.psiResponse.items[0].update_timestamp).toLocaleString();
+                _context.next = 29;
+                break;
+
+              case 24:
+                _context.prev = 24;
+                _context.t4 = _context["catch"](0);
+                error = _context.t4;
+                console.error(error);
+                alert("API Error: " + error.message);
+
+              case 29:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee);
+        }, _callee, this, [[0, 24]]);
       }));
 
       function mounted() {
@@ -410,45 +414,50 @@ var ForceGraph = /*#__PURE__*/function (_Vue) {
     }()
   }]);
 
-  return ForceGraph;
+  return MapPSI;
 }(lib/* Vue */.w3);
 
-ForceGraph = ForceGraphvue_type_script_lang_ts_decorate([lib/* Component */.wA], ForceGraph);
-/* harmony default export */ var ForceGraphvue_type_script_lang_ts_ = (ForceGraph);
-;// CONCATENATED MODULE: ./src/components/ForceGraph.vue?vue&type=script&lang=ts&
- /* harmony default export */ var components_ForceGraphvue_type_script_lang_ts_ = (ForceGraphvue_type_script_lang_ts_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/ForceGraph.vue?vue&type=style&index=0&lang=css&
+MapPSI = MapPSIvue_type_script_lang_ts_decorate([(0,lib/* Component */.wA)({
+  components: {
+    LMap: LMap/* default */.Z,
+    LTileLayer: LTileLayer/* default */.Z,
+    LMarker: LMarker/* default */.Z,
+    LIcon: LIcon/* default */.Z
+  }
+})], MapPSI);
+/* harmony default export */ var MapPSIvue_type_script_lang_ts_ = (MapPSI);
+;// CONCATENATED MODULE: ./src/components/MapPSI.vue?vue&type=script&lang=ts&
+ /* harmony default export */ var components_MapPSIvue_type_script_lang_ts_ = (MapPSIvue_type_script_lang_ts_); 
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/MapPSI.vue?vue&type=style&index=0&lang=css&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/ForceGraph.vue?vue&type=style&index=0&lang=css&
+;// CONCATENATED MODULE: ./src/components/MapPSI.vue?vue&type=style&index=0&lang=css&
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/index.js
-var components_VCard = __webpack_require__(7118);
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-12[0].rules[0].use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/MapPSI.vue?vue&type=style&index=1&lang=css&
+// extracted by mini-css-extract-plugin
+
+;// CONCATENATED MODULE: ./src/components/MapPSI.vue?vue&type=style&index=1&lang=css&
+
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VCol.js
 var VCol = __webpack_require__(2102);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VContainer.js + 1 modules
 var VContainer = __webpack_require__(9846);
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VList/VList.js + 1 modules
-var VList = __webpack_require__(6816);
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VList/VListItem.js + 1 modules
-var VListItem = __webpack_require__(7620);
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VList/index.js + 11 modules
-var components_VList = __webpack_require__(8246);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
 var VRow = __webpack_require__(2877);
-;// CONCATENATED MODULE: ./src/components/ForceGraph.vue
+;// CONCATENATED MODULE: ./src/components/MapPSI.vue
 
 
 
 ;
 
 
+
 /* normalize component */
 
-var ForceGraph_component = (0,componentNormalizer/* default */.Z)(
-  components_ForceGraphvue_type_script_lang_ts_,
-  ForceGraphvue_type_template_id_afb0ad82_render,
-  ForceGraphvue_type_template_id_afb0ad82_staticRenderFns,
+var MapPSI_component = (0,componentNormalizer/* default */.Z)(
+  components_MapPSIvue_type_script_lang_ts_,
+  MapPSIvue_type_template_id_52cf8e38_render,
+  MapPSIvue_type_template_id_52cf8e38_staticRenderFns,
   false,
   null,
   null,
@@ -456,23 +465,14 @@ var ForceGraph_component = (0,componentNormalizer/* default */.Z)(
   
 )
 
-/* harmony default export */ var components_ForceGraph = (ForceGraph_component.exports);
+/* harmony default export */ var components_MapPSI = (MapPSI_component.exports);
 
 /* vuetify-loader */
 ;
 
 
 
-
-
-
-
-
-
-
-
-
-installComponents_default()(ForceGraph_component, {VCard: VCard/* default */.Z,VCardSubtitle: components_VCard/* VCardSubtitle */.Qq,VCardText: components_VCard/* VCardText */.ZB,VCardTitle: components_VCard/* VCardTitle */.EB,VCol: VCol/* default */.Z,VContainer: VContainer/* default */.Z,VList: VList/* default */.Z,VListItem: VListItem/* default */.Z,VListItemContent: components_VList/* VListItemContent */.km,VListItemSubtitle: components_VList/* VListItemSubtitle */.oZ,VListItemTitle: components_VList/* VListItemTitle */.V9,VRow: VRow/* default */.Z})
+installComponents_default()(MapPSI_component, {VCol: VCol/* default */.Z,VContainer: VContainer/* default */.Z,VRow: VRow/* default */.Z})
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js!./node_modules/ts-loader/index.js??clonedRuleSet-41[0].rules[0].use[2]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/Home.vue?vue&type=script&lang=ts&
 
@@ -547,7 +547,7 @@ var Home = /*#__PURE__*/function (_Vue) {
 
 Home = Homevue_type_script_lang_ts_decorate([(0,lib/* Component */.wA)({
   components: {
-    ForceGraph: components_ForceGraph
+    MapPSI: components_MapPSI
   }
 })], Home);
 /* harmony default export */ var Homevue_type_script_lang_ts_ = (Home);
@@ -563,8 +563,8 @@ Home = Homevue_type_script_lang_ts_decorate([(0,lib/* Component */.wA)({
 ;
 var Home_component = (0,componentNormalizer/* default */.Z)(
   views_Homevue_type_script_lang_ts_,
-  Homevue_type_template_id_69767ee2_render,
-  Homevue_type_template_id_69767ee2_staticRenderFns,
+  Homevue_type_template_id_54eb7308_render,
+  Homevue_type_template_id_54eb7308_staticRenderFns,
   false,
   null,
   null,
@@ -592,7 +592,7 @@ var routes = [{
   // this generates a separate chunk (about.[hash].js) for this route
   // which is lazy-loaded when the route is visited.
   component: function component() {
-    return __webpack_require__.e(/* import() | about */ 443).then(__webpack_require__.bind(__webpack_require__, 7454));
+    return __webpack_require__.e(/* import() | about */ 443).then(__webpack_require__.bind(__webpack_require__, 2464));
   }
 }];
 var router = new vue_router_esm/* default */.Z({
@@ -646,7 +646,7 @@ new vue_runtime_esm/* default */.Z({
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -732,7 +732,7 @@ new vue_runtime_esm/* default */.Z({
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = function(chunkId) {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + "about" + "-legacy." + "21d4d694" + ".js";
+/******/ 			return "js/" + "about" + "-legacy." + "65262e23" + ".js";
 /******/ 		};
 /******/ 	}();
 /******/ 	
@@ -765,7 +765,7 @@ new vue_runtime_esm/* default */.Z({
 /******/ 	/* webpack/runtime/load script */
 /******/ 	!function() {
 /******/ 		var inProgress = {};
-/******/ 		var dataWebpackPrefix = "csc3007-assignment4:";
+/******/ 		var dataWebpackPrefix = "csc3007-assignment5:";
 /******/ 		// loadScript function to load a script via script tag
 /******/ 		__webpack_require__.l = function(url, done, key, chunkId) {
 /******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
@@ -911,7 +911,7 @@ new vue_runtime_esm/* default */.Z({
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkcsc3007_assignment4"] = self["webpackChunkcsc3007_assignment4"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkcsc3007_assignment5"] = self["webpackChunkcsc3007_assignment5"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();
@@ -921,9 +921,9 @@ new vue_runtime_esm/* default */.Z({
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [998], function() { return __webpack_require__(6332); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [998], function() { return __webpack_require__(6187); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=app-legacy.97e561cc.js.map
+//# sourceMappingURL=app-legacy.1e0a66d8.js.map

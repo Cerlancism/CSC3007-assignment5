@@ -1,0 +1,37 @@
+
+html {
+    overflow-y: auto
+}
+
+
+.node-hover {
+    stroke-width: 2px;
+    stroke: black;
+}
+
+
+.psi-marker {
+    opacity: 0.8;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 64px !important;
+    height: 64px !important;
+    margin: 0 !important;
+}
+.psi-normal {
+    background-color: green;
+}
+.psi-moderate {
+    background-color: blue;
+}
+.psi-unhealthy {
+    background-color: yellow;
+}
+.psi-veryunhealthy {
+    background-color: orange;
+}
+.psi-hardardous {
+    background-color: red;
+}
+

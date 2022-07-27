@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkcsc3007_assignment4"] = self["webpackChunkcsc3007_assignment4"] || []).push([[443],{
+(self["webpackChunkcsc3007_assignment5"] = self["webpackChunkcsc3007_assignment5"] || []).push([[443],{
 
-/***/ 7454:
+/***/ 2464:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 // ESM COMPAT FLAG
@@ -12,8 +12,8 @@ __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ views_AboutView; }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/AboutView.vue?vue&type=template&id=a1d3af9a&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"about"},[_c('v-container',{staticStyle:{"max-width":"1280px"}},[_c('MainBody',{attrs:{"msg":"Visualizing just a small cluster of cases (20 cases) during the Covid situation in 2021"}})],1)],1)}
+;// CONCATENATED MODULE: ./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/views/AboutView.vue?vue&type=template&id=0d62cb44&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"about"},[_c('v-container',{staticStyle:{"max-width":"1280px"}},[_c('MainBody',{attrs:{"msg":"Map of Live PSI Level"}})],1)],1)}
 var staticRenderFns = []
 
 
@@ -131,4 +131,4 @@ installComponents_default()(AboutView_component, {VContainer: VContainer/* defau
 /***/ })
 
 }]);
-//# sourceMappingURL=about.bfbc9f1f.js.map
+//# sourceMappingURL=about.6717e1b7.js.map

@@ -2,7 +2,7 @@
     <div class="about">
         <v-container style="max-width: 1280px">
             <MainBody
-                msg="Visualizing just a small cluster of cases (20 cases) during the Covid situation in 2021"
+                msg="Map of Live PSI Level"
             />
         </v-container>
     </div>

@@ -2,7 +2,7 @@
     <v-app>
         <v-card :class="radius">
             <v-toolbar color="dark" dark flat>
-                <v-toolbar-title>Singapore COVID 19 Force Graph</v-toolbar-title>
+                <v-toolbar-title>Singapore PSI Map</v-toolbar-title>
 
                 <v-spacer></v-spacer>
 
